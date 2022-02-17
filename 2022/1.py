@@ -27,6 +27,6 @@ async def mojip(
     embed = discord.Embed(title=f"{time} testembed", description=etc)
 
     message = await ctx.respond(embed=embed)
-    
+
     view = Button(message_id=message.id)
-    await message.edit(view=view)
+    await ctx.edit(view=view)
