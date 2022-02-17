@@ -21,8 +21,8 @@ class Button(discord.ui.View):
 @bot.slash_command(description="test")
 async def mojip(
     ctx,
-    time: Option(str, "ttt.", required=False, default = ' '),
-    etc: Option(str, "eee", required=False, default = ' '),
+    time: Option(str, "ttt.", required=False) = '',
+    etc: Option(str, "eee", required=False) = '',
 ):
     embed = discord.Embed(title=f"{time} testembed", description=etc)
 
